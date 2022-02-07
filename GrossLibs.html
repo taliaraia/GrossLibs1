@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>GrossLibs</title> <meta content="Tali and Suzanne Grossman's first project. Our goal was to try making a form in our first coding languages of  and javascript. To do so we decided to make a family MadLibs based on fictional family stories.">
+    <script type="text/javascript" src="grosslibsjs.js"></script>
+</head>
+<body>
+        <div id="content">
+         <form action="#theStory" method="post" onsubmit="submitInputs();return false">
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="input1">collective noun</label>
+              <div class="col-sm-7">
+                <input class="form-control" id="input1" placeholder="collective noun" required="" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="input2">collective noun</label>
+              <div class="col-sm-7">
+                <input class="form-control" id="input2" placeholder="collective noun" required="" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="input3">verb</label>
+              <div class="col-sm-7">
+                <input class="form-control" id="input3" placeholder="verb" required="" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="input4">same verb+ing</label>
+              <div class="col-sm-7">
+                <input class="form-control" id="input4" placeholder="same verb+ing" required="" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="input5">Adjective</label>
+              <div class="col-sm-7">
+                <input class="form-control" id="input5" placeholder="Adjective" required="" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-4 col-form-label" for="input6">Adjective</label>
+              <div class="col-sm-7">
+                <input class="form-control" id="input6" placeholder="Adjective" required="" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <button class="btn btn-primary" type="submit">Submit</button> - <button class="btn btn-success" onclick="autoFill()" type="button">Auto-Fill</button> - <button class="btn btn-danger" onclick="clearForm()" type="button">Clear</button>
+            </div>
+</div>
+<div id="theStory"></div>
+</body>
+</html>
